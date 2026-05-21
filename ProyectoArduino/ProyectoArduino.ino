@@ -1,4 +1,4 @@
-int PinIR = A0;
+int PinIR = A5;
 
 void setup(){
   Serial.begin(9600);
@@ -7,10 +7,6 @@ void setup(){
 
 void loop(){
   int number_for_avarage=0;
-  for(int i=0; i<30; i++){
-      number_for_avarage += int(analogRead(PinIR));
-      delay(2);
-  }
-  Serial.println(int(number_for_avarage/30.0));
-  delay(50);
+  Serial.println(analogRead(PinIR));
+  delay(5);
 }
