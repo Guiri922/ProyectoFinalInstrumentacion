@@ -307,3 +307,7 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,intellij
+
+# Archivos Propios
+ProyectoPython/tests_csv.py
+ProyectoPython/speed_tests.py
