@@ -26,7 +26,7 @@ except:
 sleep(1.5)
 
 # valor de x visibles en la gráfica
-muestras = 50
+muestras = 500
 datos_plot = np.zeros(muestras)
 grabando = False
 
@@ -69,7 +69,7 @@ def start():
     global grabando, archivo_csv, escritor_csv
     if not grabando:
         try:
-            nombre_archivo = f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            nombre_archivo = f"logs/log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
             archivo_csv = open(nombre_archivo, "w", newline='')
             escritor_csv = csv.writer(archivo_csv)
 
@@ -109,7 +109,7 @@ frm_izq.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 fig, ax = plt.subplots(figsize=(4, 3), dpi=100)
 linea_plot, = ax.plot(datos_plot, color='blue', lw=2, label="ADC")
 
-ax.set_ylim(-10, 12000)
+ax.set_ylim(-10, 2**14)
 ax.set_title("Señal de ADC")
 ax.legend()
 canvas = FigureCanvasTkAgg(fig, master=frm_izq)

@@ -7,5 +7,5 @@ void setup(){
 
 void loop(){
   Serial.println(analogRead(PinIR));
-  delay(20);
+  delay(40);
 }
