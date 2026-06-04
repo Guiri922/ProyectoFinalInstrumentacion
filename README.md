@@ -1,11 +1,19 @@
 # Proyecto Final
-Esta es una breve documentación sobre el funcionamiento del proyecto final, 
-este utiliza en Python un ambiente de desarrollo con [Anaconda](https://www.anaconda.com/download),
-para activarlo, ubíquese en el directorio de este archivo y escriba el comando:
+Para replicarse, clone el repositorio mediante:
+```bash
+git clone https://github.com/Guiri922/ProyectoFinalInstrumentacion
 
-~~~ commandline
-conda env create -f proyecto.yml
-~~~
+cd ProyectoFinalInstrumentacion
+pip install -r requirements.txt
+```
 
-Una vez creado, seleccionese en el editor de código de su preferencia y el 
-proyecto debería de funcionar correctamente.
+Una vez hecho esto, abra el [IDE de Arduino](https://www.arduino.cc/en/software/)
+en [este directorio](ProyectoArduino) y suba a un Arduino UNO R4.
+
+Finalmente, en el directorio `ProyectoFinalInstrumentacion` realice los 
+comandos:
+
+```bash
+cd ProyectoPython
+python main.py
+```
