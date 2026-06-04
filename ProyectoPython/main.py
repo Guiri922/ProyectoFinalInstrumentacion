@@ -11,7 +11,7 @@ import matplotlib
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-from temp_logic import *
+from logic import *
 
 # Explicit imports to satisfy Flake8
 from tkinter import (
