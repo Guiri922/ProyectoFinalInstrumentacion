@@ -311,3 +311,5 @@ pyrightconfig.json
 # Archivos Propios
 ProyectoPython/tests_csv.py
 ProyectoPython/speed_tests.py
+ProyectoArduino2/*
+
